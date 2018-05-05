@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>DOTA</title>
+	<link rel="stylesheet"  href="企业站入手/enterpriseweb.css">
+	<link rel="stylesheet"  href="http://at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.css">
+	<style>
+	@font-face {
+  font-family: 'iconfont';  /* project id 650584 */
+  src: url('//at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.eot');
+  src: url('//at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_650584_emiiw41nxblf2yb9.svg#iconfont') format('svg');
+}
+	html,body{
+		height: 100%;
+	}
+		header {
+			position: relative;
+			height: 100%;
+			min-height: 600px;
+			background: url('https://i.loli.net/2018/05/02/5ae9bb656c295.jpg') center center no-repeat;
+			background-size: cover;
+		}
+	
+		header .logo {
+			color: #f7ba3e;
+			font-size: 32px;
+			float: left;
+			margin-top: 10px;
+		}
+		header .nav {
+			float: right;
+
+		}
+		header ul>li {
+			float: left;
+
+		}
+		header .nav a {
+			color: #fff;
+			font-size: 20px;
+			padding: 10px;
+			display: block;
+			margin: 10px;
+			border-radius: 4px;
+
+		}
+		header .nav a:hover {
+			background: #f7ba3e;
+		}
+		header .intr {
+			text-align: center;
+			position: absolute; 
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #ffdebb;
+		}
+		header .intr h2 {
+			font-size: 50px;
+			
+
+		}
+		
+		header .intr h3 {
+			font-size: 50px;
+			margin-top: 20px;
+
+		}
+		header .intr a {
+			margin-top: 50px;
+			padding: 20px;
+			font-size: 30px;
+
+		}
+		section {
+			text-align: center;
+			margin-top: 30px;
+		}
+		section>h2 {
+
+			font-size: 30px;
+		}
+		section>p {
+			margin-top: 10px;
+		}
+		section .attributes >li {
+        float: left;
+        width: 33.3%;
+        padding: 15px 20px;
+        margin-top: 30px;
+		}
+		section > ul .iconfont{
+			font-size: 40px;
+			color: yellow;
+		}
+		section .family figure {
+			width: calc(33.3% - 20px);
+			height: 280px;
+			margin: 50px 10px;
+			float: left;
+		}
+		section .family img {
+			width: 100%;
+			height: 100%;
+
+		}
+		section .family a {
+			display: block;
+			height: 260px;
+
+		}
+		section .family figcaption {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		section .family p {
+			color: #999;
+			margin-top: 10px;
+		} 
+		section .timeline img{
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			border: 3px solid lightblue;
+			
+
+		}
+		section .timeline> li:after {
+			content: '';
+			display: block;
+			clear: both;
+
+		}
+		section .timeline> li:nth-child(odd) {
+			margin-top: 70px;
+			padding-right: calc(50% - 75px);
+			text-align: right;
+			
+		}
+	
+		section .timeline > li:nth-child(even) {
+			margin-top: 70px;
+        padding-left: calc(50% - 75px);
+        
+        text-align: left;
+        }
+        section .timeline> li:nth-child(even) img {
+        	float: left;
+        }
+         section .timeline> li:nth-child(odd) img {
+        	float: right;
+
+        }
+        section .timeline > li:nth-child(even) dl {
+        	margin-left: 180px;
+        }
+        section .timeline > li:nth-child(odd) dl {
+        	margin-right: 180px;
+        }
+        section .timeline dt {
+        	font-size: 20px;
+        	font-weight: bold;
+        }
+        section .timeline>li{
+        	position: relative;
+        }
+        section .timeline>li:before {
+        	content: '';
+        	display: inline-block;
+        	height: 100px;
+        	width: 2px;
+        	background-color: lightblue;
+        	position: absolute;
+        	left: 50%;
+        	top: 150px;
+
+
+        }
+        section .timeline>li:last-child:before {
+        	height: 0;
+        }
+        section .person figure{
+        	width: calc(33.3% - 20px);
+			height: 280px;
+			margin: 50px 10px;
+			float: left;
+        }
+        section .person img {
+        	width: 100%;
+        	height: 100%;
+        	border-radius: 50%;
+        }
+        
+        section  h1 {
+        	font-size: 50px;
+        	
+        }
+        section .person figcaption{
+        	font-weight: bold;
+        	margin-top: 20px;
+        	
+        }
+        section .person p {
+        	margin-top: 10px;
+        }
+        section .person a {
+        	font-size: 30px;
+        }
+        section .person .contact {
+        	margin-top: 20px;
+        	letter-spacing: 5px;
+        }
+        .PE {
+        	margin-top: 100px;
+        }
+        .connect {
+        	position: relative;
+			margin-top: 100px;
+			height: 100%;
+			min-height: 600px;
+			background: url('https://i.loli.net/2018/05/05/5aed82bd1951e.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		.message {
+			text-align: center;
+		}
+		.message h1 {
+			position: absolute;
+			color: #fff;
+			font-size: 50px;
+			top: 60px;
+			left: 660px;
+		}
+		.message .NEP {
+			position: absolute;
+			height: 300px;
+			width: 450px;
+			
+			top: 30%;
+			right: 50%;
+			
+		}
+		.message .textarea {
+			position: absolute;
+			
+			height: 300px;
+			width: 450px;
+			left: 50%;
+			top: 30%;
+			
+		}
+		.message .SEND {
+			position: absolute;
+			bottom: 200px;
+			left: 770px;
+			
+		}
+		.connect .row {
+			display: block;
+			width: 300px;
+			height: 40px;
+			margin-top: 30px;
+			margin-left: 100px;
+
+
+		}
+		.connect .BIG {
+			width: 300px;
+			height: 200px;
+			margin-top: 30px;
+		}
+		footer {
+			height:100px ;
+		}
+		footer p {
+			font-weight: bold;
+			display: inline-block;
+			margin-left: 50px;
+			margin-top: 30px;
+		}
+		footer .contact a {
+			
+			font-size: 30px;
+			margin-left: 10px;
+			
+
+		}
+		footer .contact {
+			display: inline-block;
+			margin-left: 150px;
+		}
+		footer .sa {
+			display: inline-block;
+
+
+			margin-left: 200px;
+		}
+		footer .sa a {
+			color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="navbar layout clearfix">
+			<a href="#" class="logo">Defence of the ancients</a>
+			<ul class= nav>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Family</a></li>
+				<li><a href="#">Characters</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="intr layout">
+			<h2>Please let the world end now</h2>
+			<h3> It matters not to me </h3>
+			<a href="#" class="button">Get more</a>
+		</div>
+
+		</header><!-- /header -->
+    <main class="layout">
+      <section class="  clearfix">
+      	<h2>Three attributes about heros</h2>
+      	<p>There are three attributes of the  heros: strength, agility, and intelligence.</p>
+      <ul class="attributes">
+      	<li>
+      		<span class="iconfont icon-fist"></span>
+      		<h4>Power attributes</h4>
+      		<p> Add a little bit of power to add 19 HP and 0.03 HP/SEC regeneration.</p>
+      	</li>
+      	<li>
+      		<span class="iconfont icon-wing"></span>
+      		<h4>Agility attribute</h4>
+      		<p>Increases the attack speed by 1% for every bit of agility, and adds a bit of armor every 7 points</p>
+      	</li>
+      	<li>
+      		<span class="iconfont icon-wand"></span>
+      		<h4>Intellectual attribute</h4>
+      		<p>:Increases the mana regeneration rate by 13 mana and 0.04 / SEC</p>
+      	</li>
+      </ul>
+
+      </section>
+      <section>
+      	<h2 >Heroes show</h2>
+      	<p>Here is the motto for the hero</p>
+      	<div class="family clearfix">
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc864a82.jpg" alt="axe.jpg" title="axe.jpg" /></a>
+      			<figcaption>Axe</figcaption>
+      			<p>No business but war. No family but death. No mercy but the grave!</p>
+      		</figure>
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc85cccb.jpg" alt="antimage.jpg" title="antimage.jpg" /></a>
+      			<figcaption>Antimage</figcaption>
+      			<p>They are life's weight in mana pay.</p>
+      		</figure>
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc86cae3.jpg" alt="bounty_hunter.jpg" title="bounty_hunter.jpg" /></a>
+      			<figcaption>Bounty hunter</figcaption>
+      			<p>No job is too big, no fee is too big.</p>
+      		</figure>
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc885fa7.jpg" alt="night_stalker.jpg" title="night_stalker.jpg" /></a>
+      			<figcaption>Night stalker</figcaption>
+      			<p>Day walker, night stalker.</p>
+      		</figure>
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc88db2d.jpg" alt="phantom_lancer.jpg" title="phantom_lancer.jpg" /></a>
+      			<figcaption>Phantom lancer</figcaption>
+      			<p>Another is always ready.</p>
+      		</figure>
+      		<figure>
+      			<a href="" ><img src="https://i.loli.net/2018/05/02/5ae9bbc88e1d5.jpg" alt="rubick.jpg" title="rubick.jpg" /></a>
+      			<figcaption>Rubick</figcaption>
+      			<p>I am no thief. I merely borrow</p>
+      		</figure>
+      	</div>
+      </section>
+      <section>
+      	<h2>Timeline</h2>
+      	<p>Mile stone</p>
+      	<ul class="timeline">
+      		<li >
+      			<img src="https://i.loli.net/2018/05/05/5aed026bbe06d.png" alt="world_of_warcraft_app.png" title="world_of_warcraft_app.png" />
+      			<dl>
+
+      				<dt>1996/5/15</dt>
+      				<dd>魔兽争霸的出现</dd>
+      				<dd>2002年《魔兽争霸3：混乱之治》在中国发行，随即其资料片《魔兽争霸3：冰峰王座》出现并一直更新至今，截此为止已到1.21版本</dd>
+      				
+      			</dl>
+      		</li>
+      		<li>
+      			<img src="https://i.loli.net/2018/05/05/5aed026bcf22e.jpg" alt="u=549118528,3846529121&fm=27&gp=0.jpg" title="u=549118528,3846529121&fm=27&gp=0.jpg" />
+      		    <dl>
+
+      				<dt>2001/8/23</dt>
+      				<dd>DOTA的出现</dd>
+      				<dd>一位叫做Euls的玩家制作了第一张DOTA地图其中两队都只有总共5个英雄，非常简单。</dd>
+      				<
+      			</dl>
+      		</li>
+      		<li>
+      			<img src="https://i.loli.net/2018/05/05/5aed026bb62bb.jpg" alt="u=2498218857,1500455779&fm=27&gp=0.jpg" title="u=2498218857,1500455779&fm=27&gp=0.jpg" />
+      		    <dl>
+
+      				<dt>2013/7/9</dt>
+      				<dd>DOTA2的出现</dd>
+      				<dd>《刀塔2》也被称作《DOTA2》，由《DOTA》的地图核心制作者IceFrog（冰蛙）联手美国Valve公司研发的一款游戏</dd>
+      				
+      			</dl>
+      		</li>
+      		<li>
+      			<img src="https://i.loli.net/2018/05/05/5aed026bd7536.jpg" alt="u=2045003114,3448358569&fm=27&gp=0.jpg" title="u=2045003114,3448358569&fm=27&gp=0.jpg" />
+      			<dl>
+
+      				<dt>2011/8/17</dt>
+      				<dd>TI的出现</dd>
+      				<dd>DOTA2国际邀请赛，The International DOTA2 Championships。简称Ti，创立于2011年，是一个全球性的电子竞技赛事，每年一届，由ValveCorporation（V社）主办,奖杯为V社特制冠军盾牌，每一届冠军队伍及人员将记录在游戏泉水的冠军盾中。</dd>
+      				
+      			</dl>
+      		<li>
+      			<img src="https://i.loli.net/2018/05/05/5aed026bc6d64.jpg" alt="下载.jpg" title="下载.jpg" />
+      			<dl>
+
+      				<dt>2012/8/17</dt>
+      				<dd>中国的一个TI冠军</dd>
+      				<dd>如果说中国战队要为TI1 EHOME的落败复仇，那就在TI2。TI2是中国的dota秀。 LGD Gaming, IG以及DK在小组赛完全展现了他们的实力</dd>
+      				
+      			</dl>
+      		</li>
+      		<li>
+      			<img src="https://i.loli.net/2018/05/05/5aed0fbbbfbbe.jpg" alt="666.jpg" title="666.jpg" />
+      		</li>
+      	</ul>
+      </section>
+      <section class="PE">
+      	<h1>Famous Fish</h1>
+      	<div class="person clearfix">
+      		<figure>
+      			<a href="" title=""><img src="https://i.loli.net/2018/05/05/5aed1595c842a.jpg" alt="下载 (1).jpg" title="下载 (1).jpg" /></a>
+      			<figcaption>姜岑</figcaption>
+      			<p>YYF，胖头鱼，TI2冠军三号位</p>
+      			<div class="contact">
+      				<a class="iconfont" href="">&#xe633;</a>
+      			<a class="iconfont" href="">&#xe61b;</a>
+      			<a class="iconfont" href="">&#xe600;</a>
+      				
+      			</div>
+      		</figure>
+      		<figure>
+      			<a href="" title=""><img src="https://i.loli.net/2018/05/05/5aed1595e2d3b.jpg" alt="u=1239112791,1196397913&fm=27&gp=0.jpg" title="u=1239112791,1196397913&fm=27&gp=0.jpg" /></a>
+      			<figcaption>骆非池</figcaption>
+      			<p>魔法少女，世界第一可爱，TI2冠军中单</p>
+      		    <div class="contact">
+      			<a class="iconfont" href="">&#xe633;</a>
+      			<a class="iconfont" href="">&#xe61b;</a>
+      			<a class="iconfont" href="">&#xe600;</a>
+      				
+      			</div>
+      		</figure>
+      		<figure>
+      			<a href="" title=""><img src="https://i.loli.net/2018/05/05/5aed1592eb634.jpg" alt="下载 (2).jpg" title="下载 (2).jpg" /></a>
+      			<figcaption>徐志雷</figcaption>
+      			<p>Burning，徐地雷，我爱喝水</p>
+      			<div class="contact">
+      			<a class="iconfont" href="">&#xe633;</a>
+      			<a class="iconfont" href="">&#xe61b;</a>
+      			<a class="iconfont" href="">&#xe600;</a>
+      				
+      			</div>
+      			
+      		</figure>
+      		
+      	</div>
+      	
+      </section>
+    </main>
+    <div class=" connect">
+    	<div class="layout message">
+    	<h1>Come to jion us</h1>
+    	
+    		<div class="NEP">
+    			
+    			<input type="text" class="row" placeholder="YOUR NAME ">></input>
+    			<input type="text" class="row" placeholder="YOUR EMAIL "> </input>
+    			<input type="text" class="row" placeholder="YOUR PHONE"> </input>
+    			
+    		</div>
+    		<div class="textarea">
+    			<textarea class="BIG" placeholder="YOUR MESSAGE"></textarea>
+    		</div>
+    	
+    	<a href="" title="" class="button SEND">SEND MESSAGE</a>
+    </div>
+</div>
+	<footer class="layout">
+		<p>Copyright © Your Website 2018</p>
+		<div class="contact">
+      			<a class="iconfont" href="">&#xe633;</a>
+      			<a class="iconfont" href="">&#xe61b;</a>
+      			<a class="iconfont" href="">&#xe600;</a>
+      				
+      	</div>
+      	<div class="sa">
+      		
+      	
+      			<a href=" " title="">Privacy Policy</a>
+      			<a href="" title="">Terms of Use</a>
+      		</div>
+	</footer>
+</body>
+</html>
