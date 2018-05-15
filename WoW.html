@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>魔兽世界</title>
+	
+	<style type="text/css" media="screen">
+		body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type:none;
+}		
+a {
+	text-decoration: none;
+}
+/*common css*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.layout{
+	width: 1200px;
+	margin: 0 auto;
+}
+* {
+	box-sizing: border-box;
+}
+/*page css*/
+body {
+	font: 12px/1.3 Arial;
+	background-color: #000;
+}
+html,body {
+	height: 100%;
+}
+#header {
+	background: url(http://wow.nos.netease.com/1/legion/index/bg_1.jpg?v1) center center no-repeat;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.navbar {
+   margin-top: 50px
+}
+
+.navbar>li {
+	float: left;
+	height: 70px;
+	width: 160px;
+	border: 1px solid #3f2a22;
+    background-color: #261712;
+    border-left: none;
+}
+.navbar>li:first-child {
+	border-left: 1px solid #3f2a22;
+}
+.navbar a {
+	display: block;
+	color: #f8b408;
+	height: 70px;
+	line-height: 70px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.navbar .logo {
+   width: 240px;
+}
+.navbar img {
+	margin-top: -50px;
+}
+#main {
+	background-color: #120d0a;
+	border-top: 2px solid #030500;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+#main .item {
+	position: relative;
+    width: 288px;
+    float: left;
+    margin-left: 16px
+}
+.container {
+	margin-left: -16px;
+}
+#main .item h3 {
+	background-color: #251812;
+	color: #f8b700;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    line-height: 70px;
+}
+#main .item:hover {
+	top: -20px;
+	
+}
+#main .item:hover h3 {
+	color: #fff;
+}
+.business {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.business .logos {
+	width: 330px;
+	float: left;
+	
+    font-size: 14px;
+}
+.business .info {
+	margin-left: 350px;
+	
+}
+.business .contact .icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	
+	background-image: url('https://i.loli.net/2018/05/15/5afaae19686ed.png') ;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.icon-kefu {
+	background-position: -5px -7px;
+}
+.icon-fankui {
+	background-position: -35px -7px;	
+}
+.icon-join {
+	background-position: -64px -7px;
+}
+.business .contact a {
+	color: #fff;
+	margin-right: 20px;
+}
+.parters a {
+	margin-top: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+.parters .wy {
+	margin-top: 80px;
+}
+.info .info-partner {
+	text-align: right;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.info-partner a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.suggestion {
+	
+	padding-top: 40px;
+	padding-bottom: 50px;
+	color: #eee;
+	text-align: center;
+}
+.neirong {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+.version {
+	
+	margin-left: 350px;
+	margin-top: 80px;
+	color: rgba(255,255,255,.3);
+}
+.version .privacy li{
+	padding: 3px;
+	font-size: 14px;
+	float: left;
+	color: #ccc;
+}
+.version .privacy li a {
+	color: #ccc;
+}
+.version a {
+	color: rgba(255,255,255,.3);
+}
+.version .privacy  {
+	overflow: hidden;
+	
+}
+	</style>
+</head>
+<body>
+<header id="header" class="">
+	
+		<ul class="navbar clearfix layout">
+			<li>
+				<a href="">进入官网</a>
+			</li>
+			<li>
+				<a href="">账号注册</a>
+			</li>
+			<li>
+				<a href="">充值管理</a>
+			</li>
+			<li class="logo">
+				<a href="" title=""><img src="https://i.loli.net/2018/05/15/5afac6c3b6b6b.png" alt="1%2Fimages%2Flanding-legion%2Flogo.png" title="1%2Fimages%2Flanding-legion%2Flogo.png" /></a>
+			</li>
+			<li>
+				<a href="">游戏下载</a>
+			</li>
+			<li>
+				<a href="">客服中心</a>
+			</li>
+			<li>
+				<a href="">官方论坛</a>
+				<ul class="subnav">
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="neirong">
+			<img src="https://i.loli.net/2018/05/15/5afac6c3e1852.png" alt="1%2Flegion%2Findex%2Fslogan.png" title="1%2Flegion%2Findex%2Fslogan.png" />
+		</div>
+	
+</header><!-- /header -->
+<div id="main">
+	<div class="layout clearfix">
+		<ul class="container">
+			<li class="item"><a href="">
+					<h3>全新同盟种族</h3>
+					<img src="https://i.loli.net/2018/05/15/5afa952a6b414.jpg" alt="1%2Fimages%2Flanding-legion%2Feye20170206.jpg" title="1%2Fimages%2Flanding-legion%2Feye20170206.jpg" />
+				</a></li>
+			<li class="item"><a href="">
+					<h3>7.3.5版本在线修正</h3>
+					<img src="https://i.loli.net/2018/05/15/5afa952a751f6.jpg" alt="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_1.jpg" title="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_1.jpg" />
+				</a></li>
+			<li class="item"><a href="">
+					<h3>直升110级现已开启</h3>
+					<img src="https://i.loli.net/2018/05/15/5afa952a7ca35.jpg" alt="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_2.jpg" title="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_2.jpg" />
+				</a></li>
+			<li class="item"><a href="">
+					<h3>7.3.5版本现已上线</h3>
+					<img src="https://i.loli.net/2018/05/15/5afa952a848d2.jpg" alt="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_3.jpg" title="1%2Fwow%2Ffeatures%2Flanding%2Fwow%2Flanding20180131_se_3.jpg" />
+				</a></li>
+		</ul>
+	</div>
+</div id="footer">
+    <div class="business clearfix">
+    	<div class="logos">
+ 		    <div class="contact">
+ 		    <a href="" title=""><span class="icon icon-fankui"></span>在线客服</a>
+ 		    <a href="" title=""><span class="icon icon-join"></span>反馈</a>
+ 		    <a href="" title=""><span class=" icon icon-kefu"></span>加入我们</a>
+ 		    </div>
+ 		    <div class="parters">
+ 		    <a href="" title="" >
+ 		 		<img src="https://i.loli.net/2018/05/15/5afabd5e52e24.png" alt="3%2Fsuspense%2Flogo_blizzard.png" title="3%2Fsuspense%2Flogo_blizzard.png" />
+ 		    </a>
+ 		    <a href="" title="" class="wy">
+ 		 	<img src="https://i.loli.net/2018/05/15/5afaae1981f1a.png" alt="3%2Fsuspense%2Flogo_ne.png" title="3%2Fsuspense%2Flogo_ne.png" />
+ 		    </a>
+    	    </div>
+
+
+        </div>
+        <div class="info">
+    	 	<div class="info-partner">
+    	 		合作品牌:
+    	 		<a href="">
+    	 			<img src="http://heroes.nos.netease.com/1/images/common/business-logo-1.png" alt="">
+    	 		</a>
+    	 		
+    	 	</div>
+
+        </div>
+        <div class="version  ">
+        	<ul class="privacy ">
+        		<li>
+        			<a href="">隐私</> |
+        	    </li>
+        		<li>
+        			<a href="">法律条款</a> |
+        	    </li>
+        		<li>
+        			<a href="">API</a> |</li>
+        	</ul>
+        	<p>
+        	©2018 暴雪娱乐有限公司版权所有 
+        	<span>由上海网之易网络科技发展有限公司运营</span>
+        	</p>
+        	<span >文网进字[2014]0116号
+        	</span>"&nbsp;|&nbsp;"
+        	<a href="" title="">沪网文号〔2017〕9633-727号
+        	</a>"&nbsp;|&nbsp;"
+        	<a href="" title="">增值电信业务经营许可证编号：沪B2－20080012</a>
+        	<p>
+            互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+            <a href="" title="">上海市网络游戏行业自律公约
+            </a>
+        	</p>
+        	
+
+        </div>
+    
+    </div>
+    
+    <div class="suggestion layout">
+    	<p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+    	<p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+    </div>
+
+
+</div>
+</body>
+</html>
